@@ -57,8 +57,8 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
-        System.out.println("Se desarrollo un proyecto");
+        processRequest(request, response);
+        //System.out.println("Se desarrollo un proyecto");
     }
 
     /**

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+        <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+        <link rel="stylesheet" href="../css/ventas.css"/>
+        <link href="../bower_components/polymer/polymer.html" rel="import">
+    </head>
+    <body>
+    <polymer-element name="venta-component">
+        <template>
+            <link rel="stylesheet" href="../css/ventas.css"/>
+            <div class="encabezado marco">
+                <div>Imagen Tienda</div>
+                <div>Titulo Venta</div>
+                <div>Numero Venta y boleta</div>
+                <div>Opciones</div>
+            </div>
+            <div class="datos marco" id="vendedor">Datos Vendedor</div>
+            <div class="datos marco" id="cliente">Datos Comprador</div>
+            <div class="productos marco">Datos Producto</div>
+            <div class="costos marco">Precion total</div>
+        </template>
+        <script>
+            Polymer('venta-component',{
+                
+            });
+        </script>
+    </polymer-element>
+    <venta-component></venta-component>
+    </body>
+</html>

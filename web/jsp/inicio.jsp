@@ -1,17 +1,18 @@
-<%-- 
-    Document   : inicio
-    Created on : 26-abr-2015, 11:42:43
-    Author     : katty
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <a href="jsp/administrador.jsp"> Administrador</a>
+        <a href="jsp/ventas.jsp"> Ventas</a>
+        <div>TODO write content</div>
     </body>
 </html>

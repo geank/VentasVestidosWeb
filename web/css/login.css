@@ -1,0 +1,126 @@
+a{
+    font-size: 1em;
+    text-align: right;
+    display: block;
+    padding-top:10px;
+    color: #546E09;
+    text-decoration: none;
+    font-style: italic;
+}
+button{
+  background: #7FA018;
+  color: #1C2602;
+  padding: 10px 35px;
+  font-size: 1em;
+  font-weight: 1em;
+  border-radius: 5px;
+  /*overflow: hidden;*/
+  position: relative;
+  
+  transition: all 500ms ease;
+  width: 70%;
+  margin-left: 30%;
+}
+button:before {
+ font-family: FontAwesome;
+ /*content: "../imagen/anuncio1.jpg";*/
+ position: absolute;
+ top: 11px;
+ left: -35px;
+ transition: all 200ms ease;
+}
+
+button:hover:before {
+ left: 15%;
+}
+
+html,body {
+  font-family: 'RobotoDraft';
+  background: url(../imagen/fondo_login.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+form {
+	width: 31em;
+	margin: 4em auto;
+	padding: 3em 2em 2em 2em;
+	/*background: #fafafa;*/
+	/*border: 1px solid #ebebeb;
+	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;*/
+}
+input:-webkit-autofill { color: #231211 !important; }
+
+ paper-button[raised].colored {
+    background: #7FA018;
+    color: #000000;
+    margin-right: 4px;
+ }
+ paper-button.hover:hover {
+     background: #eee;
+   }
+
+.datos {
+  color: #4D4C4C;
+  font-size: 1.5em;
+}
+
+#login h1 {
+    color: #000000;
+    font-size: 5em;
+    text-align: center;
+    
+}
+
+paper-input-decorator /deep/ .label-text,
+paper-input-decorator /deep/ .error {
+    /* inline label,  floating label, error message and error icon color when the input is unfocused */
+    color: #546E09;
+}
+
+paper-input-decorator /deep/ ::-webkit-input-placeholder {
+    /* platform specific rules for placeholder text */
+    color: #546E09;
+}
+paper-input-decorator /deep/ ::-moz-placeholder {
+    color: #546E09;
+}
+paper-input-decorator /deep/ :-ms-input-placeholder {
+    color: #546E09;
+}
+
+paper-input-decorator /deep/ .unfocused-underline {
+    /* line color when the input is unfocused */
+    background-color: #546E09;
+}
+
+paper-input-decorator[focused] /deep/ .floating-label .label-text {
+    /* floating label color when the input is focused */
+    color: #546E09;
+}
+paper-input-decorator .label-text{
+   color: ; 
+}
+paper-input-decorator /deep/ .focused-underline {
+    /* line color when the input is focused */
+    background-color: #546E09;
+}
+paper-input-decorator.invalid[focused] /deep/ .floated-label .label-text,
+paper-input-decorator[focused] /deep/ .error {
+    /* floating label, error message nad error icon color when the input is invalid and focused */
+    color: salmon;
+}
+
+paper-input-decorator.invalid /deep/ .focused-underline {
+    /* line and color when the input is invalid and focused */
+    background-color: salmon;
+}
+
+@media only screen and (max-width: 640px) {
+  form{
+    font-size: 0.75em;
+    width: 25em;
+  }
+}

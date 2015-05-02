@@ -33,26 +33,23 @@
 <body unresolved>
 
     <section id="login">
+        <div>Ingresar</div>
+        <paper-input-decorator class="custom" label="Usuario" floatingLabel>
+          <input is="core-input" name="usuario">
+        </paper-input-decorator>
+        <paper-input-decorator label="Password" floatingLabel>
+         <input is="core-input" name="password" type="password" required>
+        </paper-input-decorator>
+        <br>
+        <div class="checkbox">
+         <paper-checkbox aria-checked="false" aria-label="recordarme" label="Recordar" role="checkbox" tabindex="0">
+         </paper-checkbox>
+        </div>
+        <br>
 
- <form action="/login" method="POST">
- 	<div>Ingresar</div>
-    <paper-input-decorator class="custom" label="Usuario" floatingLabel>
-      <input is="core-input" name="usuario">
-    </paper-input-decorator>
-    <paper-input-decorator label="Password" floatingLabel>
-     <input is="core-input" name="password" type="password" required>
-    </paper-input-decorator>
-    <br>
-    <div class="checkbox">
-     <paper-checkbox aria-checked="false" aria-label="recordarme" label="Recordar" role="checkbox" tabindex="0">
-     </paper-checkbox>
-    </div>
-    <br>
-  
-   <div><paper-button id="my-button" raised="" type="submit" onclick="mostrarMensaje()" role="button" tabindex="0"> <core-icon aria-label="lock" icon="lock" role="img"><svg viewBox="0 0 24 24" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" fit="" style="pointer-events: none; display: block;"><g><path d="M18 8h-1v-2c0-2.76-2.24-5-5-5s-5 2.24-5 5v2h-1c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9h-6.2v-2c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></g></svg></core-icon>Ingresar</paper-button></div> 
-   <div class="text-center"><a class="forget" data-target=".forget-modal" data-toggle="modal" href="javascript:;">¿Olvidaste tu password?</a></div>
-  </form>
-</section>
+       <div><paper-button id="my-button" raised="" type="submit" onclick="mostrarMensaje()" role="button" tabindex="0"> <core-icon aria-label="lock" icon="lock" role="img"><svg viewBox="0 0 24 24" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" fit="" style="pointer-events: none; display: block;"><g><path d="M18 8h-1v-2c0-2.76-2.24-5-5-5s-5 2.24-5 5v2h-1c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9h-6.2v-2c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></g></svg></core-icon>Ingresar</paper-button></div> 
+       <div class="text-center"><a class="forget" data-target=".forget-modal" data-toggle="modal" href="javascript:;">¿Olvidaste tu password?</a></div>
+    </section>
   <script>
     function mostrarMensaje(){
       console.log("se hizo click en el boton de login XD");

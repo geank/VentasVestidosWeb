@@ -139,7 +139,5 @@ public class Prenda {
 
     public void setEstado(boolean estado) {
         this.estado = estado;
-    }
-    
-    
+    }   
 }

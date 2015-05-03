@@ -15,6 +15,8 @@ and open the template in the editor.
         <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
         <link rel="stylesheet" href="../css/ventas.css"/>
         <link href="../bower_components/polymer/polymer.html" rel="import">
+        <link href="../bower_components/paper-input/paper-input.html" rel="import"/>
+        <link rel="import" href="../bower_components/core-list/core-list.html">
     </head>
     <body>
     <polymer-element name="venta-component">
@@ -26,14 +28,43 @@ and open the template in the editor.
                 <div>Numero Venta y boleta</div>
                 <div>Opciones</div>
             </div>
-            <div class="datos marco" id="vendedor">Datos Vendedor</div>
-            <div class="datos marco" id="cliente">Datos Comprador</div>
-            <div class="productos marco">Datos Producto</div>
-            <div class="costos marco">Precion total</div>
+            <div class="datos marco" id="vendedor">
+                <div class="tit">
+                    Vendedor:
+                </div>
+                <div class="resp">
+                    Nombre del vendedor
+                </div>
+            </div>
+            <div class="datos marco" id="cliente">
+                <div class="tit">
+                    Cliente:
+                </div>
+                <paper-input label="nombre cliente"></paper-input>
+                <div class="tit">
+                    DNI:
+                </div>
+                <paper-input id="inputdni" label="N° documento"></paper-input>
+            </div>
+            
+            <div class="productos marco">
+                <core-list id="lista1" data="{{listaProductos}}">
+                    <template>
+                        <div>{{model.nombrej}}</div>
+                    </template>
+                </core-list>
+            </div>
+            <div class="costos marco">Precio total</div>
         </template>
         <script>
             Polymer('venta-component',{
-                
+                ready:function(){
+                    this.listaProductos = [];
+                    console.log('dentro de ready');
+                    for(var i = 0; i < 15 ; i ++)
+                        this.listaProductos.push({nombrej : "producto " + i});
+                    console.log(this.listaProductos);
+                }
             });
         </script>
     </polymer-element>

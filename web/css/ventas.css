@@ -45,10 +45,11 @@ div{
     display: inline-block;
 }
 .datos{
-    height: 5%;
+    height: 10%;
 }
 .productos{
-    height: 60%;
+    height: 50%;
+    overflow:auto;
 }
 .costos{
     height: 10%;
@@ -57,4 +58,18 @@ div{
     width: 100%;
     margin-bottom: 5px;
     border-color: tomato;
+}
+.datos>div{
+    display:inline-block;
+}
+.tit{
+    font-style: italic;
+    font-weight:bold;
+}
+#inputdni{
+    width:20%;
+}
+core-list{
+    height: 150%;
+    overflow:hidden;
 }
